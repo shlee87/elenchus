@@ -1,0 +1,44 @@
+{
+  "name": "Elenchus",
+  "description": "social annotation app for opensource textbooks",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+
+  "action": {
+    "default_title":"ask on textbooks",
+    "default_icon": "icons/socrates_16x16.png",
+    "default_popup":"popup/popup.html"
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+        "content/elenchus-highlighter.js",
+        "content/content.js"
+      ]
+    }
+
+  ],
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+
+  "icons":{
+    "16": "icons/socrates_16x16.png",
+    "48": "icons/socrates_48x48.png",
+    "64": "icons/socrates_64x64.png",
+    "128": "icons/socrates_128x128.png"
+  },
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
