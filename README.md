@@ -1,10 +1,10 @@
 # Chrome Extension Development Project Plan
 
-This document outlines the project plan for the development of our Chrome Extension. This extension aims to create an interactive open-source textbook experience where users can pose questions and provide answers to facilitate collaborative learning. It will support user interaction, user management, secure data management, compatibility with diverse web pages, and optimal performance.
 
 ## **1. Project Overview**
+
+This document outlines the project plan for the development of our Chrome Extension. This extension aims to create an interactive open-source textbook experience where users can pose questions and provide answers to facilitate collaborative learning. It will support user interaction, user management, secure data management, compatibility with diverse web pages, and optimal performance.
    
-The project involves developing a Chrome extension that enables users to ask questions and provide answers on open-source textbooks. It will support user interaction, user management, secure data management, compatibility with diverse web pages, and optimal performance.
 
 ## **2. Project Phases**
 
